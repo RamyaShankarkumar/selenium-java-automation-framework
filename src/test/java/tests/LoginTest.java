@@ -13,6 +13,7 @@ public class LoginTest extends BaseTest {
 
         login.load();
         login.login("admin", "password");
+        //here username is admin and password
 
         Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"));
     }
