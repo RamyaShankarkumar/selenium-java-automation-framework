@@ -15,6 +15,6 @@ public class LoginTest extends BaseTest {
         login.login("standard_user", "secret_sauce");
         //here username is admin and password
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
     }
 }
