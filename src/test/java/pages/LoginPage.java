@@ -28,5 +28,7 @@ public class LoginPage {
         driver.findElement(username).sendKeys(user);
         driver.findElement(password).sendKeys(pwd);
         driver.findElement(loginBtn).click();
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(productsTitle));
     }
 }
