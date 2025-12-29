@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ramya.selenium</groupId>
-    <artifactId>selenium-java-automation-framework</artifactId>
+    <artifactId>selenium-java-framework</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -16,7 +16,6 @@
     </properties>
 
     <dependencies>
-
         <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -31,13 +30,11 @@
             <version>7.9.0</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
         <plugins>
-
-            <!-- Maven Surefire -->
+            <!-- Surefire plugin to run TestNG -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -48,8 +45,6 @@
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
-
 </project>
